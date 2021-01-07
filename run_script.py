@@ -10,7 +10,6 @@ import pandas_datareader.data as pdr
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import statistics
 
 # Define Assets
 
@@ -65,8 +64,8 @@ def create_results_dataframe(tickers ,number_portfolios, mean_daily_returns, cov
         weights /= np.sum(weights)
 
         # calculate portfolio return and volatility
-        portfolio_return = np.sum(mean_daily_returns * weights) * 365 * 6
-        portfolio_std_dev = np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights))) * np.sqrt(365 * 6)
+        portfolio_return = np.sum(mean_daily_returns * weights) * 365
+        portfolio_std_dev = np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights))) * np.sqrt(365)
 
         # store results in results array
         results_temp[0, i] = portfolio_return

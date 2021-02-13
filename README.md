@@ -34,7 +34,7 @@ Due to the low correlation of Bitcoin with traditional assets, bitcoin is simila
 Therefore Bitcoin can both enhance risk-adjusted returns or lower the overall risk of an investment portfolio. <br> 
 When looking at the efficient frontier, there are two points of particular interest. <br> 
 The maximum sharp ratio portfolio describes the portfolio with the highest risk-adjusted return, while the minimum volatility portfolio shows the portfolio with the lowest standard deviation. <br>
-It is interesting to see, that even while Bitcoin as an high-risk asset itself, a 4% Stake can lower the overall portfolio volatility. <br>
+It is interesting to see, that even while Bitcoin as an high-risk asset itself, a 4% stake can lower the overall portfolio volatility. <br>
 When looking for the highest risk-adjusted returns an investor should weight Bitcoin with 40%. 
 Beyond this point investors deliberately accept higher risks for diminishing marginal returns.
 

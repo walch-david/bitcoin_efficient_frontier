@@ -34,7 +34,11 @@ crypto_prices = get_data(crypto, '01/01/2015', '01/01/2021' )
 
 # Merge Data into one Dataframe
 
-data_prices = pd.concat([stock_prices, crypto_prices], axis=1)
+stock_prices = stock_prices.set_index(stock_prices.groupby(level=0).cumcount(), append=True)
+crypto_prices = crypto_prices.set_index(crypto_prices.groupby(level=0).cumcount(), append=True)
+data_prices = pd.concat([stock_prices, crypto_prices], axis=1, ignore_index=False)
+
+# Fill Missing Values
 
 data_prices = data_prices.fillna(method ='ffill')
 data_prices = data_prices.fillna(method ='bfill')
